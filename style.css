@@ -68,3 +68,13 @@ picture, picture img {
     align-items: center;
     justify-content: space-between;
 }
+
+#image {
+    width: 40px;
+    height: 40px;git add 
+    border: none;
+    border-radius: 50%;
+    background: var(--Light-Grayish-Blue);
+    cursor: pointer;
+    z-index: 2;
+}
