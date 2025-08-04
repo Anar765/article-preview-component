@@ -21,14 +21,14 @@ function Share() {
             triangle.style.display = "none";
         }
     } else {
-        if (bg === "rgb(236, 242, 248)") {
-            shareImage.style.backgroundColor = "hsl(214, 17%, 51%)"; 
-            shareIcon.setAttribute("fill", "#ecf2f8");
-            container.classList.add('mobile');
-        } else {
-            shareImage.style.backgroundColor = "rgb(236, 242, 248)";
-            shareIcon.setAttribute("fill", "#6E8098");
-            container.classList.remove('mobile');
-        }
+        // if (bg === "rgb(236, 242, 248)") {
+        //     shareImage.style.backgroundColor = "hsl(214, 17%, 51%)"; 
+        //     shareIcon.setAttribute("fill", "#ecf2f8");
+        //     container.classList.add('mobile');
+        // } else {
+        //     shareImage.style.backgroundColor = "rgb(236, 242, 248)";
+        //     shareIcon.setAttribute("fill", "#6E8098");
+        //     container.classList.remove('mobile');
+        // }
     }
 }
