@@ -45,7 +45,8 @@ main {
     box-shadow: 0 0 20px 20px hsl(210, 25%, 88%);
 }
 
-picture, picture img {
+picture,
+picture img {
     width: 100%;
     height: auto;
 }
@@ -59,7 +60,7 @@ picture, picture img {
     font-weight: 700;
 }
 
-#text > p {
+#text>p {
     margin: 1rem 0 2rem 0;
 }
 
@@ -88,7 +89,7 @@ figure {
 }
 
 figcaption h3 {
-    color: var(--Very-Dark-Grayish-Blue); 
+    color: var(--Very-Dark-Grayish-Blue);
     margin-bottom: 0.3rem;
 }
 
@@ -126,19 +127,21 @@ figure img {
 @media screen and (min-width: 768px) {
 
     body {
-        height: 100vh;
         margin: 0;
     }
 
     main {
         flex-direction: row;
-        max-width: 80rem;
+        max-width: 60rem;
         overflow: visible;
     }
+
+    picture { width: 70% }
 
     picture img {
         height: 100%;
         object-fit: cover;
+        object-position: 0rem;
         border-radius: 1rem 0 0 1rem;
     }
 
@@ -148,13 +151,25 @@ figure img {
 
     #container {
         width: auto;
+        display: none;
         padding: 1rem 2rem;
         justify-content: center;
         align-items: center;
         border-radius: 0.5rem;
-        left:auto;
+        left: auto;
         bottom: auto;
-        right: -3rem;
+        right: -4rem;
         top: -5rem;
+        box-shadow: 0 5px 10px 5px hsl(210, 25%, 88%)
+    }
+
+    #triangle {
+        display: none;
+        position: absolute;
+        top: 3.5rem;
+        right: 7.3rem;
+        border-top: 15px solid var(--Very-Dark-Grayish-Blue);
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;   
     }
 }
