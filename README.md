@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/article-preview-component-solution-CRrwijOZ6b)
 - Live Site URL: (https://anar765.github.io/article-preview-component/)
 
 ## My process
