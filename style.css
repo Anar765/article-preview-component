@@ -36,6 +36,7 @@ body {
 
 main {
     width: 90vw;
+    max-width: 30rem;
     display: flex;
     flex-direction: column;
     background: white;
@@ -50,7 +51,7 @@ picture, picture img {
 }
 
 #text {
-    margin: 2rem;
+    margin: 3rem 3rem 1.5rem 3rem;
 }
 
 #text h1 {
@@ -58,8 +59,8 @@ picture, picture img {
     font-weight: 700;
 }
 
-#text p {
-    margin-block: 2rem;
+#text > p {
+    margin: 1rem 0 2rem 0;
 }
 
 #avatar {
@@ -67,14 +68,93 @@ picture, picture img {
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    padding: 0 3rem 1rem 3rem;
 }
 
 #image {
-    width: 40px;
-    height: 40px;git add 
+    width: 30px;
+    height: 30px;
     border: none;
     border-radius: 50%;
     background: var(--Light-Grayish-Blue);
     cursor: pointer;
     z-index: 2;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+figcaption h3 {
+    color: var(--Very-Dark-Grayish-Blue); 
+    margin-bottom: 0.3rem;
+}
+
+figure img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+#container {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background: var(--Very-Dark-Grayish-Blue);
+    bottom: 0;
+    left: 0;
+    padding: 1.85rem 3rem;
+
+}
+
+#share {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    gap: 1rem;
+}
+
+#share h4 {
+    letter-spacing: 0.5rem;
+    color: var(--Grayish-Blue);
+}
+
+@media screen and (min-width: 768px) {
+
+    body {
+        height: 100vh;
+        margin: 0;
+    }
+
+    main {
+        flex-direction: row;
+        max-width: 80rem;
+        overflow: visible;
+    }
+
+    picture img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    #avatar {
+        padding-bottom: 2rem;
+    }
+
+    #container {
+        width: auto;
+        padding: 1rem 2rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.5rem;
+        left:auto;
+        bottom: auto;
+        right: -3rem;
+        top: -5rem;
+    }
 }

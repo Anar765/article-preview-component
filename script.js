@@ -13,22 +13,24 @@ function Share() {
             shareContainer.style.display = "flex";
             shareImage.style.backgroundColor = "hsl(214, 17%, 51%)"; 
             shareIcon.setAttribute("fill", "#ecf2f8");
+            container.style.display = "flex"
             triangle.style.display = "block";
         } else {
             shareContainer.style.display = "none";
             shareImage.style.backgroundColor = "rgb(236, 242, 248)";
             shareIcon.setAttribute("fill", "#6E8098");
             triangle.style.display = "none";
+            container.style.display = "none";
         }
     } else {
-        // if (bg === "rgb(236, 242, 248)") {
-        //     shareImage.style.backgroundColor = "hsl(214, 17%, 51%)"; 
-        //     shareIcon.setAttribute("fill", "#ecf2f8");
-        //     container.classList.add('mobile');
-        // } else {
-        //     shareImage.style.backgroundColor = "rgb(236, 242, 248)";
-        //     shareIcon.setAttribute("fill", "#6E8098");
-        //     container.classList.remove('mobile');
-        // }
+        if (bg === "rgb(236, 242, 248)") {
+            shareImage.style.backgroundColor = "hsl(214, 17%, 51%)"; 
+            shareIcon.setAttribute("fill", "#ecf2f8");
+            container.style.display = "flex";
+        } else {
+            shareImage.style.backgroundColor = "rgb(236, 242, 248)";
+            shareIcon.setAttribute("fill", "#6E8098");
+            container.style.display = "none";
+        }
     }
 }
